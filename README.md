@@ -55,7 +55,5 @@ simple proejct on cookiecutter
     │   └── train.py            <- Code to train models
     │
     └── plots.py                <- Code to create visualizations
-```
 
---------
 
