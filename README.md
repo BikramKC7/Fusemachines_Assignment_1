@@ -57,3 +57,81 @@ simple proejct on cookiecutter
     └── plots.py                <- Code to create visualizations
 
 
+
+# 💱 Currency Converter API
+
+A lightweight and fast **Currency Converter** application built with **FastAPI**. This API allows you to convert amounts from one currency to another using real-time or fixed exchange rates.
+
+---
+
+## 🚀 Features
+
+- Convert between major international currencies
+- FastAPI-powered web backend for high performance
+- RESTful API endpoints
+- Dockerized for easy deployment
+
+---
+
+## 🛠 How to Run the Project
+
+### 🔹 Option 1: Run Locally
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/bikramkc7/currency-converter.git
+   cd currency-converter
+
+
+Create and activate a virtual environment:
+
+python -m venv env
+
+source env/bin/activate  # On Windows: env\Scripts\activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the FastAPI app:
+uvicorn main:app --reload
+
+
+Access the API:
+
+Visit http://127.0.0.1:8000
+
+Interactive docs at http://127.0.0.1:8000/docs
+
+
+🔹 Option 2: Run with Docker
+
+Build and run using Docker:
+    docker build -t currency-converter .
+    docker run -d -p 8000:8000 currency-converter
+
+Or use Docker Compose (if provided):
+    docker-compose up --build
+
+Visit in your browser:
+
+    API: http://localhost:8000
+
+    Docs: http://localhost:8000/docs
+
+
+⚙️ Configuration Notes
+The default port is 8000
+
+If the app uses real-time exchange APIs (e.g., fixer.io or exchangerate.host), you might need to:
+
+    Add an API key as an environment variable or in a .env file
+
+    Example: EXCHANGE_API_KEY=your_api_key
+
+Environment variables can be managed in a .env file or passed in the Docker container.
+
+
+
+
+
